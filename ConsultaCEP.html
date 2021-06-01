@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <title>Consulta CEP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="buscar.js"></script>
+
+    <title>Digite seu CEP!</title>
+</head>
+
+<body>
+    <h1>Digite seu CEP!</h1>
+    <div class="container">
+        <div class="input-group">
+            <span class="input-group-addon">CEP:</span>
+            <input type="text" class="form-control" id="cep">
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="botaoPesquisar()">Pesquisar</button>
+
+        <div id="conteudo" class="form-group">
+            <tr>
+                 <div class="col-sm-6" style="background-color:lavender;">Cidade</div>
+                <div class="col-sm-6" style="background-color:lightblue;">Estado</div>
+            </tr>
+            <tr>
+                <div class="col-sm-6" id="nomeCidade" style="background-color:lavender;"></div>
+                <div class="col-sm-6" id="nomeEstado" style="background-color:lightblue;"></div>
+            </tr>
+            
+        </div>
+        
+    </div>
+
+
+</body>
+
+
+</html>
